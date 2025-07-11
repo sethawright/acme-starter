@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "oxlint": "oxlint --config ../../oxlint.config.json .",
-    "oxlint:fix": "oxlint --config ../../oxlint.config.json --fix ."
+    "oxlint": "oxlint .",
+    "oxlint:fix": "oxlint --fix ."
   },
   "keywords": [],
   "author": "",

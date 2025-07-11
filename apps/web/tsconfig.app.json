@@ -1,3 +1,7 @@
 {
-  "extends": "@acme/tsconfig/vue.json"
+  "extends": "@acme/tsconfig/vue.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "types": ["vite/client"]
+  }
 }

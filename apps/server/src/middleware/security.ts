@@ -37,7 +37,7 @@ export const rateLimitConfig = rateLimit({
     // Use forwarded IP if behind proxy, otherwise use connection IP
     return req.ip || req.connection.remoteAddress || 'unknown'
   },
-  skip: (req: Request, res: Response) => {
+  skip: (req: Request, _: Response) => {
     // Skip rate limiting for health checks
     if (req.url === '/api/v1/health') {
       return true
