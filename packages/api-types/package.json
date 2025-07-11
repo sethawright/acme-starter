@@ -1,7 +1,7 @@
 {
-  "name": "api-types",
+  "name": "@acme/api-types",
   "version": "1.0.0",
-  "description": "Shared API types for medical script writer",
+  "description": "Shared API types",
   "main": "api-types.js",
   "types": "api-types.d.ts",
   "scripts": {

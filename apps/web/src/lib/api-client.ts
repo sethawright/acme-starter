@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/vue-query'
-import { HealthResponseSchema, type HealthResponse } from 'api-types'
+import { HealthResponseSchema, type HealthResponse } from '@acme/api-types'
 
 const API_BASE_URL = 'http://localhost:3000'
 
@@ -21,14 +21,13 @@ class ApiClient {
   }
 
   async getHealth(): Promise<HealthResponse> {
-    const data = await this.request<HealthResponse>('/health')
+    const data = await this.request<HealthResponse>('/api/v1/health')
     return HealthResponseSchema.parse(data)
   }
 }
 
 export const apiClient = new ApiClient()
 
-// Vue Query composables
 export const useHealthQuery = () => {
   return useQuery({
     queryKey: ['health'],

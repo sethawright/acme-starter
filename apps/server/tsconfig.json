@@ -1,5 +1,8 @@
 {
-  "extends": "medical-tsconfig/node.json",
-  "include": ["**/*.ts", "**/*.js"],
+  "extends": "@acme/tsconfig/node.json",
+  "compilerOptions": {
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*.ts", "src/**/*.js"],
   "exclude": ["node_modules", "dist", "build", "**/*.test.ts", "**/*.spec.ts"]
 }

@@ -1,3 +1,3 @@
-import { nodeConfig } from 'medical-eslint-config/node.js'
+import { nodeConfig } from '@acme/eslint-config/node.js'
 
 export default nodeConfig

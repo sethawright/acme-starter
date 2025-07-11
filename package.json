@@ -9,6 +9,7 @@
     "dev:web": "pnpm --filter=medical-script-writer dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "pnpm -r lint",
+    "format": "pnpm --parallel --filter=server --filter=web format",
     "lint:fix": "pnpm -r run lint:fix",
     "lint:web": "pnpm --filter=medical-script-writer run lint",
     "lint:server": "pnpm --filter=server run lint"
@@ -18,7 +19,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
-    "api-types": "workspace:*",
+    "@acme/api-types": "workspace:*",
     "@types/body-parser": "^1.19.6",
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.13",

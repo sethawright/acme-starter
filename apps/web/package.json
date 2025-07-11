@@ -17,10 +17,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "medical-eslint-config": "workspace:*",
-    "medical-tsconfig": "workspace:*",
+    "@acme/eslint-config": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
     "@tanstack/vue-query": "^5.82.0",
-    "api-types": "workspace:*",
+    "@acme/api-types": "workspace:*",
     "pinia": "^3.0.3",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1",

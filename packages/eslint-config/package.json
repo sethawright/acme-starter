@@ -1,7 +1,7 @@
 {
-  "name": "medical-eslint-config",
+  "name": "@acme/eslint-config",
   "version": "1.0.0",
-  "description": "Shared ESLint configuration for medical script writer",
+  "description": "Shared ESLint configuration",
   "main": "index.js",
   "files": [
     "base.js",

@@ -1,7 +1,7 @@
 {
-  "name": "medical-tsconfig",
+  "name": "@acme/tsconfig",
   "version": "1.0.0",
-  "description": "Shared TypeScript configuration for medical script writer",
+  "description": "Shared TypeScript configuration",
   "main": "index.js",
   "files": [
     "base.json",
@@ -12,7 +12,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["typescript", "tsconfig", "shared"],
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "shared"
+  ],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
