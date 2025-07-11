@@ -1,0 +1,26 @@
+{
+  "name": "medical-tsconfig",
+  "version": "1.0.0",
+  "description": "Shared TypeScript configuration for medical script writer",
+  "main": "index.js",
+  "files": [
+    "base.json",
+    "node.json",
+    "vue.json",
+    "vitest.json"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["typescript", "tsconfig", "shared"],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@vue/tsconfig": "^0.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

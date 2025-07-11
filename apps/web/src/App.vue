@@ -2,8 +2,13 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import { useHealthQuery } from './lib/api-client'
+import { useCounterStore } from './stores/counter'
+import { storeToRefs } from 'pinia'
 
 const { data: healthData, isLoading } = useHealthQuery()
+const counterStore = useCounterStore()
+const { count, doubleCount } = storeToRefs(counterStore)
+const { increment } = counterStore
 </script>
 
 <template>
@@ -17,6 +22,13 @@ const { data: healthData, isLoading } = useHealthQuery()
       <div v-else-if="healthData">
         Server Status: {{ healthData.status }} ({{ healthData.timestamp }})
       </div>
+
+      <div style="cursor: pointer">
+        <p>Counter: {{ count }}</p>
+        <p>Double: {{ doubleCount }}</p>
+      </div>
+
+      <p @click="increment">Click to increment</p>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>

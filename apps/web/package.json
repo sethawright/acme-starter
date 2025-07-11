@@ -17,6 +17,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "medical-eslint-config": "workspace:*",
+    "medical-tsconfig": "workspace:*",
     "@tanstack/vue-query": "^5.82.0",
     "api-types": "workspace:*",
     "pinia": "^3.0.3",

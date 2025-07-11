@@ -1,33 +1,5 @@
 {
-  "extends": "@tsconfig/node22/tsconfig.json",
+  "extends": "medical-tsconfig/node.json",
   "include": ["**/*.ts", "**/*.js"],
-  "exclude": ["node_modules", "dist", "build", "**/*.test.ts", "**/*.spec.ts"],
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": ["ES2022"],
-    "outDir": "./dist",
-    "rootDir": "./",
-    "strict": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "removeComments": false,
-    "noEmitOnError": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo",
-    "types": ["node"],
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  },
-  "ts-node": {
-    "esm": true
-  }
+  "exclude": ["node_modules", "dist", "build", "**/*.test.ts", "**/*.spec.ts"]
 }

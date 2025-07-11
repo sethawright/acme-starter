@@ -16,6 +16,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
   "dependencies": {
+    "medical-eslint-config": "workspace:*",
+    "medical-tsconfig": "workspace:*",
     "api-types": "workspace:*",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
