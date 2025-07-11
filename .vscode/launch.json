@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Server",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/apps/server/src/server.ts",
+      "cwd": "${workspaceFolder}/apps/server",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["exec", "tsx", "src/server.ts"],
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "sourceMaps": true,
+      "restart": true,
+      "outFiles": ["${workspaceFolder}/apps/server/**/*.js"]
+    },
+    {
+      "name": "Debug Client (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/apps/web/src",
+      "sourceMaps": true,
+      "userDataDir": false,
+      "runtimeArgs": ["--disable-web-security", "--disable-features=VizDisplayCompositor"]
+    },
+    {
+      "name": "Debug Client (Edge)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/apps/web/src",
+      "sourceMaps": true,
+      "userDataDir": false
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug Full Stack",
+      "configurations": ["Debug Server", "Debug Client (Chrome)"],
+      "stopAll": true,
+      "preLaunchTask": "Start Development Servers"
+    }
+  ]
+}

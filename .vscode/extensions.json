@@ -6,6 +6,9 @@
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
     "oxc.oxc-vscode",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "humao.rest-client",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.js-debug"
   ]
 }
