@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "oxlint": "oxlint --config ../../oxlint.config.json .",
+    "oxlint:fix": "oxlint --config ../../oxlint.config.json --fix ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "api-types": "workspace:*",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "eslint": "^9.30.1",
+    "eslint-plugin-oxlint": "^1.6.0",
+    "express": "^5.1.0",
+    "oxlint": "^1.6.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/cors": "^2.8.19",
+    "globals": "^16.3.0",
+    "jiti": "^2.4.2",
+    "typescript-eslint": "^8.36.0"
+  }
+}
