@@ -12,6 +12,7 @@ node_modules/
 **/node_modules/
 
 # OS
+.claude
 .DS_Store
 .DS_Store?
 ._*
